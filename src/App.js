@@ -22,8 +22,6 @@ import Fruits from './components/farmers/fruits';
 import NutsAndSeeds from './components/farmers/nutsandseeds';
 import StemAndTubers from './components/farmers/stemandtuber';
 import SpicesAndHearbs from './components/farmers/spicesandhearb';
-import DiaryList from './components/diary/DiaryList.component'
-
 import Loan from './components/news/News.component';
 import CreateProduct from './components/create-product/CreateProduct';
 import { setCurrentUser } from './redux/user/user.actions';
@@ -80,7 +78,6 @@ class App extends React.Component {
           <Route path='/flood' element= {<Flood  />} />
           <Route path='/loan' element= {<Loan  />} />
           <Route path='/checkout' element={<CheckoutPage />}  />
-          <Route path='/diary' element={<DiaryList />}  />
           <Route path='/submitform' element= {<CreateProduct />} />
           <Route path='/userhome' element={<UserHomePage currentUser={this.props.currentUser} />}  />
        </Routes>

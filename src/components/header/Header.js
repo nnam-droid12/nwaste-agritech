@@ -39,7 +39,7 @@ const logOut = () => {
              {/* the end of the logo */} 
             <input type="checkbox" className="nav-toggle" id='nav-toggle'/>
             <label htmlFor='nav-toggle' className='nav-toggle-label'>
-                    <span style={{color: 'dodgerblue'}}>
+                    <span style={{color: '#0F9D58'}}>
                         <GoThreeBars className='hamburger-btn' size='32px' />
                     </span>
             </label>
