@@ -14,6 +14,7 @@ import UserHomePage from './components/userhomepage/Userhome.component';
 import { AnimatePresence } from 'framer-motion';
 import ForgotPassword from './components/forgot-password/ForgotPassword.component';
 import ResetMessage from './components/reset-password/ResetPassword.component';
+import ProtectedRoutes from './components/protected-routes/ProtectedRoutes';
 
 import Farmer from './components/farmers/Farmer.component';
 import { addItem } from './redux/cart/cart.actions';
@@ -65,8 +66,7 @@ class App extends React.Component {
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/faq' element={<DisplayFaq  />} />
-          <Route path='/signin' element={this.props.currentUser? <Navigate to='/userhome'/> : <SignIn /> } />
-          <Route path='/signup' element={this.props.currentUser? <Navigate to='/userhome'/> : <SignUp /> } /> 
+   
           <Route path='/forgotpassword' element={<ForgotPassword />} />
           <Route path='/resetmessage' element= {<ResetMessage />} />
 
@@ -82,7 +82,11 @@ class App extends React.Component {
           <Route path='/checkout' element={<CheckoutPage />}  />
           <Route path='/diary' element={<DiaryList />}  />
           <Route path='/submitform' element= {<CreateProduct />} />
+          <Route path='/signin' element={this.props.currentUser? <Navigate to='/userhome'/> : <SignIn /> } />
+          <Route path='/signup' element={this.props.currentUser? <Navigate to='/userhome'/> : <SignUp /> } /> 
+      <Route element={<ProtectedRoutes />}>  
           <Route path='/userhome' element={<UserHomePage currentUser={this.props.currentUser} />}  />
+      </Route>    
        </Routes>
     </div>
     </AnimatePresence>
