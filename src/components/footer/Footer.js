@@ -9,14 +9,6 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-container">
               <div>
-              <div className='logo-container'>
-                    <div className='col'>
-                    <img className='logo' alt='logo' src={Logo} style={{height: '50px', width: '50px'}}/> 
-                    <div className='text col'style={{fontSize: '18px'}}>
-                        Nwaste
-                    </div>
-                    </div>
-                </div>  
                 <div className="f-col">
                     <FaMapMarkerAlt className="icon-gap" />  
                 <address >
@@ -28,14 +20,14 @@ const Footer = () => {
                     <HiPhone className="icon-gap" />  
                 
                 <address>
-                   <p>+2349151840633, +2348057205319 </p>
+                   <p>+2348162958127, +2349162270129 </p>
                 </address>
                 </div>
                 <div className="f-col">
                     <HiMail className="icon-gap" />  
                 <address >
                    <p>
-                        <a style={{color: '#4285f4'}} href= "mailto: nwastenetwork@gmail.com" target="_blank" rel="noreferrer">nwastenetwork@gmail.com</a>
+                        <a style={{color: '#fff'}} href= "mailto: nwastenetwork@gmail.com" target="_blank" rel="noreferrer">nwastenetwork@gmail.com</a>
                    </p>
                 </address>
                 </div>

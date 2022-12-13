@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .footer {
     font-family: montserrat, sans-serif;
-    background: rgba($color: #000000, $alpha: .65);
+    background: rgb(26, 71, 26);
     padding: 3.5rem;
     color: #dfd6d6;
 }
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: .85rem;
+    font-size: .95rem;
 }
 
 .f-col {
@@ -22,8 +22,8 @@
     font-size: 35px;
     border-radius: 50%;
     background: #000000;
-    padding: 8px;
-    color: #4285f4;
+    padding: 10px;
+    color: #fff;
 }
 
 .footer-about {

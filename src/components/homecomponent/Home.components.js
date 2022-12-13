@@ -1,48 +1,20 @@
 import React, { useState } from 'react';
-import reviews from '../../reviewdata/Review-Data';
+import { Link } from 'react-router-dom';
+import Slider from '../carousel/carousel';
 import weather from '../../assets/weather.jpg';
+import pp1 from '../../assets/pp1.jpg';
+import pp2 from '../../assets/pp2.jpg';
+import pp3 from '../../assets/pp3.jpg';
+import pp4 from '../../assets/pp4.jpg';
 import { MdArrowRightAlt, MdShoppingCart } from "react-icons/md";
-import { HiAcademicCap, HiArrowsExpand } from "react-icons/hi";
-import { WiCloudUp } from "react-icons/wi";
-import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
+import nwaste from '../../assets/nwaste-app.jpeg';
 import Header from '../header/Header';
-// import ProductDetail from '../products-detail/ProductDetail';
+import CustomButton from '../custombutton/CustomButton.component';
+import Subscribe from '../newsletter/newletter';
 import Footer from '../footer/Footer';
 import './HomePage.scss';
 
 const HomePage = (props) => {
-    // The beginning of the nexting and previewing function
-    const [index, setIndex] = useState(3);
-    const {name, job, text} = reviews[index];
-
-    // limit setting
-   const checkNumber =(number) =>{
-       if(number > reviews.length - 1){
-           return 0;
-       }
-       if(number < 0){
-           return reviews.length - 1;
-       }
-       return number;
-   }
-
-   //nexting function
-    const nextPerson = () =>{
-        setIndex((index)=>{
-            let newIndex = index + 1;
-            return checkNumber(newIndex);
-        });
-   }
-
-    //previewing function
-   const prePerson = () =>{
-    setIndex((index)=>{
-        let newIndex = index - 1;
-        return checkNumber(newIndex);
-        });
-    }
-    //The end of the nexting and previewing function
-
     return(
         <div className='homepage'>
          <Header currentUser={props.currentUser} />
@@ -68,80 +40,54 @@ const HomePage = (props) => {
           
           {/* The beginning of service*/}
           <section className="service">
-          <h3 className='horizontal-line service-title'><hr/>
-              What We Do
-          <hr/></h3>
+          <h1 className='horizontal-line service-title'><hr/>
+              Our Services
+          <hr/></h1>
             <div className="service-container">  
-                <div className="container-item">
-                <WiCloudUp 
-                    className="service-icon"
-                    size="70px"
-                />
-                <p>
-
-                <a href="https://link.springer.com/article/10.1007/s12230-017-9629-6" target="_blank" rel="noreferrer">We help farmers with recent available loan as well as solving the problem of correct worthiness</a>
-                </p>
-                </div>
-            <div className="container-item">
-                <HiArrowsExpand 
-                    className="service-icon"
-                    size="70px"
-                />
-                <p><a href="https://www.sciencedirect.com/science/article/pii/S0570178319300375" target="_blank" rel="noreferrer">Reducing the wastage of perishable food through efficient and cost effective storage system</a></p>
-            </div>
-            <div className="container-item">
-                <MdShoppingCart 
-                    className="service-icon"
-                    size="70px"
-                />
-                <p><a href="https://foodprint.org/issues/the-problem-of-food-waste/" target="_blank" rel="noreferrer">We create a seamless atmosphere for farmers to reach out to potential customers</a></p>
-            </div>
-            <div className="container-item">
-                <HiAcademicCap 
-                    className="service-icon"
-                    size="70px"
-                />
-                <p ><a href="https://www.fb.org/news/more-farmers-connecting-with-local-buyers-via-websites-and-social-media" target="_blank" rel="noreferrer">We connect farmers to buyers fast and easy</a></p>
-            </div>
+                <Link to='/signin'>
+                    <div className="container-item">
+                    <img src={pp4} className='img-style'/>
+                    </div>
+                </Link>
+                <Link to=''>
+                    <div className="container-item">
+                    <img src={pp1} className='img-style'/>
+                    </div>
+                </Link>
+                <Link to='/loan'>
+                    <div className="container-item">
+                    <img src={pp2} className='img-style'/>
+                    </div>
+                </Link>
+                <Link to="/farmers">
+                    <div className="container-item">
+                    <img src={pp3} className='img-style'/>
+                    </div>
+                </Link>
         </div>
     </section>
     {/* end of the service */}
             
     {/* the beginning of user reviews */}
     <section className="review">
-    {/* <ProductDetail /> */}
-        <div className="user-reviews">
-            <div  className='userss'>
-
-                <FaChevronLeft className='change-review' size='30px' onClick={prePerson} />
-             <div>
-                <h4>User Reviews</h4>
-                <p className='info'>{text}</p>
-                <p className='name'>{name}</p>
-                <p className='job'>{job}</p>
-              </div>
-                   <FaChevronRight className='change-review' size='30px' onClick={nextPerson} />
+            <img 
+            className='nwaste-app'
+            src={nwaste}/>
+            <div className='app-name'>
+            <h1>THE GREATEST PRODUCT EVER CREATED</h1>
+            <p className='card-text'>We help farmers get the most from harvest, connect the dot between farmers and buyers, quick access to soft loans and efficient storage system.</p>
+                    <CustomButton
+                        className='custom-btn custom-btn2'> Learn More 
+                    </CustomButton>
             </div>
-        </div>
     </section>
         {/* the end of user reviews */}
 
         <section>
-        <div>
-          <div className='guideline-content' id='guideline-content'>
-          <div className='guideline'>
-          <h3 className="horizontal-line guideline-tittle"><hr/>
-             GUIDELINE
-            <hr/></h3>
-           Welcome to NWASTE. This is a step by step guide on how to get the most in using NWASTE. If you are new, click on the login button in the navigation bar and then sign up with your email and password or you can just head on to signing with your Google account. On signing in, you will be redirected to your user page in less than a minute. In your user page, you can check if your land is flooded or not before you start planting.Upload a clear photo of your land and click detct to check if land is flooded or not.<br/><br/>
-
-          On your user page click on submit product, when you click on it, you will be redirected to a page where you can submit your available farm products with your location, price and product name for potential and prospective customers to reach out.
-           <br/><br/>
-
-            There is also a LOAN section where we display soft loans that are available for farmers to help increase productivity and maintenance of farming activities. And also a diary page in the user page where farmers can keep track of sales.
-          </div>
-          </div>
-        </div>
+          <h1 className="horizontal-line guideline-tittle"><hr/>
+              Our Products
+              <hr/></h1>
+           <Slider />
     </section>
 
         {/* future plan beginning */}
@@ -158,8 +104,11 @@ const HomePage = (props) => {
               <img src={weather} alt='' />
         </div>
       </section>
-      <Footer />
       {/* future plan ending */}
+      <section>
+        <Subscribe />
+      </section>
+      <Footer />
     </div>
     );
 }

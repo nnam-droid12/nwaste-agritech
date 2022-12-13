@@ -13,11 +13,6 @@ import { BsMicFill } from 'react-icons/bs';
 import './Header_two.scss';
 
 
-
-
-
-
-
 const HeaderTwo = ({ sttFromMic, setSearch, currentUser, hidden, search, clearBtn  }) => {
 
     return ( 
@@ -58,7 +53,7 @@ const HeaderTwo = ({ sttFromMic, setSearch, currentUser, hidden, search, clearBt
 
             <input type="checkbox" className="nav-toggle" id='nav-toggle'/>
             <label htmlFor='nav-toggle' className='nav-toggle-label'>
-                    <span style={{color: 'dodgerblue'}}>
+                    <span style={{color: '#0F9D58'}}>
                         <GoThreeBars className='hamburger-btn' size='32px' />
                     </span>
             </label>
