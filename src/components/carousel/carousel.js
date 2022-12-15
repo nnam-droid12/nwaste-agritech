@@ -16,7 +16,6 @@ const Slider =()=> {
             infiniteLoop 
             autoPlay 
             showThumbs={false}
-            stopOnHover={false}
             interval={3000}>
                 <div>
                     <img src={banana} className="item"/>
