@@ -70,6 +70,7 @@ class SignIn extends React.Component{
                     </div>
                     <GoogleButton 
                     className='google-btn'
+                    style={{background: '#0F9D58'}}
                     onClick={signInWithGoogle}>Sign in with google</GoogleButton>
                 </div>
             </div>
