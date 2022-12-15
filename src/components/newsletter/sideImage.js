@@ -20,6 +20,12 @@ const Image = styled.div`
         width: auto;
         height: 100%;
     }
+    @media screen and (max-width: 768px) {
+        img {
+        width: auto;
+        height: 75%;
+    }
+    }
 `;
 
 export function SideImage(props) {

@@ -90,7 +90,7 @@
     grid-gap: 14px;
     grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
     max-width: auto;
-    padding: 25px 85px;
+    padding: 25px 50px;
     background: rgba($color: #000, $alpha: 0.175);
     border-radius: 8px;
     opacity: .85;
@@ -101,7 +101,6 @@
 .service-container .container-item {
     position: relative;
     box-sizing: border-box;
-    background: #fff;
     border-radius: 20px;
     transition: all 0.35s ease-in-out;
 }
@@ -152,14 +151,9 @@
     }
 
     .service-container .container-item {
-        width: 300px;
         margin-bottom: 1em;
+        min-width: 350px;
     }
-
-    .service-container .container-item p {
-        font-size: 18px;
-    } 
-    
 }
 
 //end of our service styling

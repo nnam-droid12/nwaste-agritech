@@ -38,9 +38,6 @@ const Text = styled.p`
     color: #58828b;
     font-weight: 500;
     font-size: 20px;
-    @media screen and (max-width: 768px) {
-        font-size: 20px;
-    }
 `;
 
 const FormGroup = styled.div`
@@ -68,13 +65,13 @@ const EmailInput = styled.input`
     }
     @media screen and (max-width: 768px) {
         width: 220px;
-        font-size: 15px;
+        font-size: 14px;
     }
 `;
 
 const SubscribeButton = styled.button`
     position: absolute;
-    right: 14%;
+    right: 25%;
     height: 100%;
     font-weight: 500;
     color: #fff;
@@ -94,7 +91,7 @@ const SubscribeButton = styled.button`
 
     @media screen and (max-width: 768px) {
         right: -24%;
-        font-size: 12px
+        font-size: 15px
     }
 `;
 
