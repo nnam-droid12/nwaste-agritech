@@ -18,7 +18,7 @@ const Image = styled.div`
     height: 30em;
     img {
         width: auto;
-        height: 100%
+        height: 100%;
     }
 `;
 
