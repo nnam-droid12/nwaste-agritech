@@ -76,7 +76,7 @@ class SignIn extends React.Component{
             </form>
             
             <div className='signup-and-link'>
-            <p style={{color: '#4285f4', textAlign: 'center'}}>Don't Have An Account?
+            <p style={{color: '#0F9D58', textAlign: 'center'}}>Don't Have An Account?
                 <Link to='/signup'>
                     <button className='sign-up-btn'>Sign up</button>
                 </Link>
