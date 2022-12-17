@@ -71,7 +71,7 @@ const EmailInput = styled.input`
 
 const SubscribeButton = styled.button`
     position: absolute;
-    right: 25%;
+    right: 33%;
     height: 100%;
     font-weight: 500;
     color: #fff;
