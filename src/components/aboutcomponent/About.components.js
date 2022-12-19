@@ -17,9 +17,10 @@ const AboutPage = (props) => {
           <div>
           <h2 className="about-tittle">ABOUT NWASTE AND WHAT WE DO</h2>
           <p className='what-we-do'>
-            NWASTE is passionately affecting the way farmers do farm so as to address a major problem in the world today which is <mark>Zero hunger in 2030.</mark> We're devoted to helping Farmers in making smart decision before planting by supplying them with soil data information such as soil moisture, surface soil temperature in order to increase productivity and avoid wastage. We are highly committed to reducing hunger to the barest minimum and as a result, we have devised an efficient and effective storage system which uses solar powered battery which we plan to implement in the nearest future. <br/>
+            NWASTE which stands for No-waste is a Agritech business that is solving the problem in commercial agriculture by connecting farmers to buyers seamlessly through our market place. Farmers once signup can upload their farm produce available for sales for potential buyers to reach out.Customers can keep track of the distance and duration of product delivery before arrival. <br/>
+            There is also an opportunity to own a farm with Nwaste or give out your farm to be managed by Nwaste with less risk.
 
-            In the process of testing our solution, a Farmer provided a feedback and says <span style={{fontStyle: 'italic'}}>'One of the reason food do get wasted is due to the inability of Farmers to reach out to buyers.' </span> We immediately moved into action as our passion tie to seeing the world in a state of zero hunger in 2030,  we implemented a feature on our software called <mark>Market place</mark>. With it Farmers can display their products available for sales, their location as well as the product price so buyers can easily reach out to Farmers for the type of product they are in need of. 
+            We also have the loan section where farmers can have access to global agricultural loans, a profile section unique to a farmer where they can keep track of sales of farm produce. Also is flood dectector algorithm in the profile section of each farmer where they can upload a clear image of the farmland to detect if that land would be flooded or not before planting. 
           </p>
           </div>
         </div>
