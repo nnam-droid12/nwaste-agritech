@@ -133,7 +133,7 @@ const CreateProduct = () => {
               required
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              placeholder="Give me a title..."
+              placeholder="Your product name..."
               className="w-full h-full text-lg  bg-transparent outline-none order-none placeholder:text-gray-500"
             />
           </div>

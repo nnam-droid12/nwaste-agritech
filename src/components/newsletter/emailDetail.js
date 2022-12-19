@@ -19,12 +19,20 @@ const Header = styled.h1`
     color: #58828b;
     font-weight: 700;
     font-size: 45px;
+    @media screen and (max-width: 768px) {
+        font-weight: 500;
+        font-size: 32px;
+    }
+    
 `;
 const SubHeader = styled.h3`
     margin: 10px 0;
     color: #58828b;
     font-weight: 700;
     font-size: 24px;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
 `;
 const Text = styled.p`
     color: #58828b;
@@ -55,11 +63,15 @@ const EmailInput = styled.input`
     &::placeholder{
         color: #272727;
     }
+    @media screen and (max-width: 768px) {
+        width: 220px;
+        font-size: 14px;
+    }
 `;
 
 const SubscribeButton = styled.button`
     position: absolute;
-    right: 14%;
+    right: 33%;
     height: 100%;
     font-weight: 500;
     color: #fff;
@@ -76,19 +88,24 @@ const SubscribeButton = styled.button`
     &:hover {
         background-color: #1820bb;
     }
+
+    @media screen and (max-width: 768px) {
+        right: -24%;
+        font-size: 15px
+    }
 `;
 
 export function Detail(props) {
     return <DetailContainer>
         <InnerContainer>
-            <Header>Hey, wait...</Header>
-            <SubHeader>Subscribe to our newletter!</SubHeader>
+            <Header>Don't go yet!...</Header>
+            <SubHeader>Subscribe to our newsletter!</SubHeader>
                 <Text>
-                You will never miss our podcasts, latest news etc. Our newsletter is once a week, every wednesday
+                Join our newsletter to get latest and greatest agricultural updates and best practices. Our newsletter is once a week, every wednesday
                 </Text>
             <FormGroup>
                 <EmailInput 
-                type='text' placeholder='example@gmail.com' />
+                type='text' placeholder='you@gmail.com' />
                 <SubscribeButton>Subscribe</SubscribeButton>
             </FormGroup>
         </InnerContainer>

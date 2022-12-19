@@ -21,7 +21,7 @@ const HomePage = (props) => {
           <div className='container'>
               <div className='outer'>
                 <div className='details'>
-                    <h1>We help farmers get the most from harvest, connect the dot between farmers and buyers, quick access to soft loans and efficient storage system.</h1>
+                    <h1>We help farmers get the most from harvest, connect the dot between farmers and buyers, quick access to soft loans and provide efficient farm management.</h1>
                     <p>Our Mission is Zero Hunger in 2030</p>
                     <a href='#guideline-content'>
                     <button 
@@ -74,7 +74,7 @@ const HomePage = (props) => {
             className='nwaste-app'
             src={nwaste}/>
             <div className='app-name'>
-            <h1>THE GREATEST PRODUCT EVER CREATED</h1>
+            <h1>We Are Redifining The Landscape of Commercial Agriculture</h1>
             <p className='card-text'>We help farmers get the most from harvest, connect the dot between farmers and buyers, quick access to soft loans and efficient storage system.</p>
                     <CustomButton
                         className='custom-btn custom-btn2'> Learn More 

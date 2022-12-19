@@ -18,7 +18,13 @@ const Image = styled.div`
     height: 30em;
     img {
         width: auto;
-        height: 100%
+        height: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        img {
+        width: auto;
+        height: 75%;
+    }
     }
 `;
 

@@ -45,7 +45,6 @@
     outline: none;
     border: none;
     overflow: hidden;
-    color: #000;
     font-size: 16px;
     display: inline-flex;
     height: 3.45rem;
@@ -88,9 +87,9 @@
     margin-top: 1.25rem;
     display: grid;
     grid-gap: 14px;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(420px, 2fr));
     max-width: auto;
-    padding: 25px 85px;
+    padding: 25px 50px;
     background: rgba($color: #000, $alpha: 0.175);
     border-radius: 8px;
     opacity: .85;
@@ -101,7 +100,6 @@
 .service-container .container-item {
     position: relative;
     box-sizing: border-box;
-    background: #fff;
     border-radius: 20px;
     transition: all 0.35s ease-in-out;
 }
@@ -152,14 +150,13 @@
     }
 
     .service-container .container-item {
-        width: 300px;
         margin-bottom: 1em;
+        min-width: 320px;
     }
 
-    .service-container .container-item p {
-        font-size: 18px;
-    } 
-    
+    .details .get-started {
+        margin-top: -15px;
+    }
 }
 
 //end of our service styling
