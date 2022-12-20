@@ -2,7 +2,7 @@ const question_data = [
     {
         id:1,
         title: 'Will I have to pay for using Nwaste? ',
-        info: "At the moment you don't have to pay to use Nwaste but in subsequent years you'll have to start paying"
+        info: "You don't have to pay to use our platform as a farmer or customer but to make use of our flood algorithm there is a monthly subscription, check your profile for more info regarding that."
 },
     {
     id:2,
@@ -11,8 +11,8 @@ const question_data = [
 },
     {
     id:3,
-    title: 'My ouput data is not displaying on my user page',
-    info: 'If you in any way experience this issue then the failure is from our server, report to our team and we will fix the issue with immediate effect'
+    title: 'How can I know how much I make on Nwaste as a Farmer?',
+    info: 'Once you signup as farmer in your profile we are keeping track of your sales'
 },
     {
     id:4,
