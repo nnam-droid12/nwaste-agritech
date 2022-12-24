@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const DetailContainer = styled.div`
     height: 100%;
@@ -96,17 +98,35 @@ const SubscribeButton = styled.button`
 `;
 
 export function Detail(props) {
+     const [email, setEmail] = useState('');
+     const [loading, setLoading] = useState(false);
+
+     const handleSubmit = async (e) =>{
+        e.preventDefault();
+        if (!email){
+            return toast.error('Please fill email correctly!');
+         }
+        //  try{
+        //     setLoading(true)
+        //     const {data} = await axios.post(`api/email`, {
+        //         email
+        //     })
+        //  }catch(err){
+
+        //  }
+     };
     return <DetailContainer>
+     
         <InnerContainer>
             <Header>Don't go yet!...</Header>
             <SubHeader>Subscribe to our newsletter!</SubHeader>
                 <Text>
                 Join our newsletter to get latest and greatest agricultural updates and best practices. Our newsletter is once a week, every wednesday
                 </Text>
-            <FormGroup>
-                <EmailInput 
-                type='text' placeholder='you@gmail.com' />
-                <SubscribeButton>Subscribe</SubscribeButton>
+            <FormGroup onSubmit={handleSubmit}>
+                <EmailInput onChange={(e) => setEmail(e.target.value)}
+                type='email' placeholder='your-email@gmail.com' />
+            <SubscribeButton type='submit'>Subscribe</SubscribeButton>
             </FormGroup>
         </InnerContainer>
     </DetailContainer>

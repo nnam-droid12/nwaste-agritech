@@ -3,6 +3,7 @@ import FormInput from '../formInput/Forminput.component';
 import CustomButton from '../custombutton/CustomButton.component';
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import Logo from '../../assets/logo1.png';
 import './SignUp.scss';
 
@@ -23,8 +24,7 @@ class SignUp extends React.Component {
         const { displayName, email, password, confirmPassword } =this.state;
 
         if(password !== confirmPassword){
-            alert("password don't match");
-            return;
+            return toast.error(`Password don't match`);
         }
         try{
           const { user } = await auth.createUserWithEmailAndPassword(
@@ -33,7 +33,7 @@ class SignUp extends React.Component {
               user.updateProfile({
                   displayName: displayName
               }).then(() =>{
-                  return ('name updated successfully');
+                  return toast.success('SignUp Successful');
               }).catch((error) =>{
                  return (error);
               })

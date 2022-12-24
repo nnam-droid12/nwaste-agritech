@@ -5,6 +5,7 @@ import CustomButton from '../custombutton/CustomButton.component';
 import GoogleButton from 'react-google-button';
 import { Link } from 'react-router-dom';
 import { auth,signInWithGoogle } from '../../firebase/firebase.utils';
+import { toast } from 'react-toastify';
 import Logo from '../../assets/logo1.png';
 
 
@@ -24,8 +25,13 @@ class SignIn extends React.Component{
         try{
             await auth.signInWithEmailAndPassword(email, password);
             this.setState({ email: '', password: '' });
+            if( auth.signInWithEmailAndPassword){
+                return toast.success('Signin Successful')
+            }
         } catch(error){
-            console.log(error);
+            if(error){
+                return toast.error('Password or Email is Incorrect');
+            }
         }
     };
 
@@ -71,7 +77,8 @@ class SignIn extends React.Component{
                     <GoogleButton 
                     className='google-btn'
                     style={{background: '#0F9D58'}}
-                    onClick={signInWithGoogle}>Sign in with google</GoogleButton>
+                    onClick={signInWithGoogle}
+                    >Sign in with google</GoogleButton>
                 </div>
             </div>
             </form>

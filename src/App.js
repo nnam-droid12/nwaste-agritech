@@ -28,6 +28,8 @@ import CreateProduct from './components/create-product/CreateProduct';
 import { setCurrentUser } from './redux/user/user.actions';
 import { createStructuredSelector } from 'reselect';
 import Flood from './components/flood/Flood.component';
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 
 
@@ -85,6 +87,7 @@ class App extends React.Component {
           <Route path='/userhome' element={<UserHomePage currentUser={this.props.currentUser} />}  />
       </Route>    
        </Routes>
+       <ToastContainer autoClose={7000} />
     </div>
     </AnimatePresence>
   );

@@ -2,6 +2,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import 'firebase/compat/storage';
+import { toast } from 'react-toastify';
 
 const config = {
     apiKey: "AIzaSyCs0bSO5QHHRgyRFiijo8nsVdEy79T9MLo",
