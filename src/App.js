@@ -62,7 +62,7 @@ class App extends React.Component {
   return (
     <AnimatePresence exitBeforeEnter>
     <div className="App">      
-       <Routes>
+       <Routes basename='/nwaste-agritech'>
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/faq' element={<DisplayFaq  />} />
