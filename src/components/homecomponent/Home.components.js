@@ -8,7 +8,7 @@ import pp2 from '../../assets/pp2.jpg';
 import pp3 from '../../assets/pp3.jpg';
 import pp4 from '../../assets/pp4.jpg';
 import { MdArrowRightAlt, MdShoppingCart } from "react-icons/md";
-import nwaste from '../../assets/nwaste-app.jpeg';
+import nwaste from '../../assets/farm-hub-design.jpg';
 import Header from '../header/Header';
 import CustomButton from '../custombutton/CustomButton.component';
 import Subscribe from '../newsletter/newletter';

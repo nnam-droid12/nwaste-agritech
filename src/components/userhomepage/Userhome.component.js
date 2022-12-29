@@ -69,6 +69,7 @@ const UserHomePage = () => {
          <h4 style={{marginBottom: '8px'}}>Detect if land is flooded or not</h4>
          <Flood setFloodedornot={setFloodedornot} setPrediction={setPrediction} />
        </div>  
+       
         </main>
       </article>
         </div>
