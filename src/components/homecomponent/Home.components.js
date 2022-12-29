@@ -73,7 +73,7 @@ const HomePage = (props) => {
     <section className="review">
             <img 
             className='nwaste-app'
-            src={nwaste} alt='logo' />
+            src={nwaste} alt='logo' style={{height: '350px', width:'600px'}} />
             <div className='app-name'>
             <h1>We Are Redifining The Landscape of Commercial Agriculture</h1>
             <p className='card-text'>We help farmers get the most from harvest, connect the dot between farmers and buyers, quick access to soft loans and efficient storage system.</p>
@@ -98,13 +98,13 @@ const HomePage = (props) => {
             <h3 className='horizontal-line future-center' ><hr/>Our Future Plan<hr/></h3>
         <div className='mission'>
             <p>We are committed to pulling youths out of poverty with our strategy of owing a farmland without a penny and also creating jobs through our other Services.</p>
-            <img src={Youth} alt='' style={{height: '350px', width:'350px'}}></img>
+            <img src={Youth} alt='' style={{height: '280px', width:'280px'}}></img>
         </div>
         <div className='mission'>
           <p>
               Zero Hunger is our mission statement and we strongly believe with our consistent effort to reduce price of food inflation through our platform food scarcity will be a thing of the past. 
             </p>
-              <img src={Hunger} alt='' style={{height: '350px', width:'350px'}} />
+              <img src={Hunger} alt='' style={{height: '280px', width:'280px'}} />
         </div>
       </section>
       {/* future plan ending */}
